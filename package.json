@@ -1,0 +1,22 @@
+{
+  "name": "awesome-codice-fiscale",
+  "version": "1.0.0",
+  "description": "Lightweight module for validate and decrypt Italian Tax Code (alias Codice Fiscale)",
+  "main": "./dist/awesome_codice_fiscale.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack"
+  },
+  "author": "Stefano Tagliabue",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "7.2.3",
+    "@babel/core": "7.4.0",
+    "@babel/preset-env": "7.4.2",
+    "babel-jest": "24.5.0",
+    "babel-loader": "8.0.5",
+    "jest": "24.5.0",
+    "webpack": "4.29.6",
+    "webpack-cli": "3.3.0"
+  }
+}
