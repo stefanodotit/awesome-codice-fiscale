@@ -9,23 +9,6 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'awesome_codice_fiscale.js',
-        library: 'AwesomeCodiceFiscale',
-    },
-    module: {
-        rules: [
-            {
-                test: /\.js$/,
-                exclude: /(node_modules)/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env']
-                    }
-                }
-            }
-        ]
-    },
-    optimization: {
-        minimize: true
+        libraryTarget: 'commonjs'
     }
 }
