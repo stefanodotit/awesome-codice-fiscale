@@ -39,3 +39,17 @@ export function extractInfo(code){
         birthPlace: cadastralCodes[code.substr(11,4)]
     }
 }
+
+export function isAdult(code, adultAge = 18){
+    if(!isValid(code)){
+        return false
+    }
+    const info = extractInfo(code)
+    const date = new Date()
+    const res = true
+    info.birthDay.forEach(year => {
+        const minAdult = new Date(`${date.getMonth+1}-${date.getDay()+1}-${date.getFullYear() - year}`)
+        res = (date <= minAdult) && true
+    })
+    return res 
+}

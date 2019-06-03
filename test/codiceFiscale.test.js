@@ -1,7 +1,10 @@
-import { isValid, extractInfo } from '../src/index'
+import { isValid, extractInfo, isAdult } from '../dist/awesome_codice_fiscale'
 
 const VALID_CF = 'RSSMRC86S09F205L'
 const NOT_VALID_CF = 'RSSMRC86S09F205L0'
+
+const ADULT_CF = 'RSSMRC86S09F205L'
+const NOT_ADULT_CF = 'RSSMRC05S09F205L'
 
 it('check is valid', () => {
     expect(isValid(VALID_CF)).toBe(true)
@@ -19,4 +22,8 @@ it('extract info', () => {
         birthPlace: 'MILANO'
     })
     expect(extractInfo(NOT_VALID_CF)).toBe(false)
+})
+
+it('check is adult', () => {
+    expect()
 })

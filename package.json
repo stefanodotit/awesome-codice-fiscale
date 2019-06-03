@@ -5,7 +5,7 @@
   "main": "./dist/awesome_codice_fiscale.js",
   "scripts": {
     "test": "jest",
-    "build": "webpack"
+    "build": "webpack && yarn run test"
   },
   "author": "Stefano Tagliabue",
   "license": "ISC",

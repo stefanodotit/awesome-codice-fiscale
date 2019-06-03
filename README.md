@@ -33,6 +33,14 @@ const info = extractInfo(CODICE_FISCALE)
 }
 ```
 
-## Available npm scripts:
-- `npm run build`: build the bundle into `dist` directory.
-- `npm run test`: launch the tests.
+### Check if user is adult
+@input `CODICE_FISCALE`, `AGE` (default 18)
+```javascript
+import { isAdult } from 'awesome-codice-fiscale'
+isAdult(CODICE_FISCALE, 21)
+```
+@return `Boolean` (Also false when multiple birthYear and one of this is under age)
+
+## Available yarn scripts:
+- `yarn run build`: build the bundle into `dist` directory.
+- `yarn run test`: launch the tests.
