@@ -1,6 +1,6 @@
 {
   "name": "awesome-codice-fiscale",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Lightweight module for validate and decrypt Italian Tax Code (alias Codice Fiscale)",
   "main": "./dist/awesome_codice_fiscale.js",
   "scripts": {
